@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>LULLABY | Let's Sing a Song!</title>
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- Google Webfont -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- CSS -->		
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/jplayer.pink.flag.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="js/superfish/css/megafish.css" media="screen">
+	<link rel="stylesheet" href="js/superfish/css/superfish.css" media="screen">
+	<link rel="stylesheet" href="css/icon/style.css" />
+	<link rel="stylesheet" href="css/prettyphoto.css">
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- custom link css -->
+    <link href="css/simple-player/styles.css" rel="stylesheet" type="text/css" />
+
+	<script src="assets/p5/p5.min.js"></script>
+	<script src="assets/p5/addons/p5.dom.min.js"></script>
+	<script src="assets/p5/addons/p5.sound.min.js"></script>
+	</head>
+<body>
+<div id="page-top"></div>
+
+<div class="body">
+
+<!-- HEADER -->
+<header>
+	<div class="container">
+		<div class="logo col-md-2 col-xs-4">
+			<a href="#"><img src="images/logo.png" class="img-responsive" alt=""/></a>
+		</div>
+
+		<div class="col-md-10 col-xs-8 header-right">
+			<div class="row">
+				<div class="col-md-12">
+
+					<nav class="menu-wrap">
+						<div id="mobnav-btn"><i class="fa fa-bars"></i></div>
+						<ul class="sf-menu">
+							<li><a class="page-scroll" href="#services">Steps</a></li>
+							<li><a class="page-scroll" href="#playlist">Playlist</a></li>
+							<!-- <li><a class="page-scroll" href="#contact">Login</a></li> -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- HEADER -->
+
+<!-- INTRO -->
+<div id="intro">
+	<div class="container">
+		<div class="col-md-12 text-center">
+			<h3>The Perfect Sing-Along Game</h3>
+			<h1>Welcome to the Lullaby</h1>
+			<div class="dual-btns">
+				<a href="#playlist" class="btn btn-default page-scroll">Try It Now !</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- INTRO -->
+
+<div class="wrapper">
+
+<!-- SERVICES -->
+<div id="services">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-3">
+				<div class="icon-box">
+					<i class="play-pen"></i>
+					<h3>1. Register</h3>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="icon-box">
+					<i class="play-user"></i>
+					<h3>2. Login</h3>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="icon-box">
+					<i class="play-vynil"></i>
+					<h3>3. Choose a song</h3>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="icon-box">
+					<i class="play-music"></i>
+					<h3>4. Sing a Song!</h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- SERVICES -->
+
+<!-- PLAYLIST -->
+<div class="playlist-wrap" id="playlist">
+	<!-- Canvaas -->
+	<h3 id="score" style="color: #ffe002"></h3>
+	<div class="col-md-6" id="canvasPlayer">
+	</div>
+	<div class="col-md-6">
+		<div class="content-container">
+			<!-- PLAYER -->
+			<div class="example">
+
+				<div class="player">
+					<div class="pl"></div>
+					<div class="title"></div>
+					<div class="artist"></div>
+					<div class="cover"></div>
+					<div class="controls">
+						<div class="play"></div>
+						<div class="pause"></div>
+						<div class="rew"></div>
+						<div class="fwd"></div>
+					</div>
+					<div class="volume"></div>
+					<div class="tracker"></div>
+				</div>
+				<ul class="playlist">
+					<li audiourl="chrisye_Pergilah_Kasih.mp3" cover="cover7.jpg" artist="Chrisye" id="song1">Pergilah <KBD></KBD>Kasih</li>
+					<li audiourl="Yura_Yunita_Berawal_Dari_Tatap.mp3" cover="cover7.jpg" artist="Yura Yunita" id="song2">Berawal Dari Tatap</li>
+					<li audiourl="isyana_tetap_dalam_jiwa.mp3" cover="cover7.jpg" artist="Isyana Saraswati" id="song3">Tetap Dalam Jiwa</li>
+					<li audiourl="raisa-teka-teki.mp3" cover="cover7.jpg" artist="Raisa" id="song4">Teka-Teki</li>
+					<li audiourl="tulus-sewindu.mp3" cover="cover7.jpg" artist="Tulus" id="song5">Sewindu</li>
+					<li audiourl="hivi-pelangi.mp3" cover="cover7.jpg" artist="Hivi" id="song6">Pelangi</li>
+					<li audiourl="adera-lebih-indah.mp3" cover="cover7.jpg" artist="Adera" id="song7">Lebih Indah</li>
+					<li audiourl="afgan-terima-kasih-cinta.mp3" cover="cover7.jpg" artist="Afgan" id="song8">Terima Kasih Cinta</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- PLAYLIST -->
+
+<!-- FOOTER -->
+<section class="footer">
+	<div class="container">
+		<div class="col-md-3">
+			<div class="widget-content">
+				<h3 class="widget-title">About</h3>
+				<div class="textwidget">
+					<p>Lullaby is a web-based application that is used to learn to sing</p>
+					<p class="hidden-xs">&copy; Copyright 2018. LULLABY. <br>All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="widget-content">
+				<h3 class="widget-title">Contact Us</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="footer-links">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Email : digya@gmail.com</li>
+							<li><a href="#">Hanphone : +6281362929266 </li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- FOOTER -->
+
+</div>
+</div>
+
+<!-- Javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>	
+
+<script src="js/simple-player/jquery-1.7.2.min.js"></script>
+<script src="js/simple-player/jquery-ui-1.8.21.custom.min.js"></script>
+<!-- <script src="js/simple-player/main.js"></script> -->
+
+<script src="js/classie.js"></script>
+<script src="js/tweecool.min.js"></script>
+<script src="js/jplayer.playlist.min.js"></script>
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/superfish/js/hoverIntent.js"></script>
+<script src="js/superfish/js/superfish.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/prettyphoto/jquery.prettyPhoto.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/custom.js"></script>
+<script src="sketch.js"></script>
+
+</body>
+</html>
